@@ -23,3 +23,21 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 270px;
+}
+
+
+@media (max-width: 767px){
+  body{
+    margin-bottom: 530px;
+  }
+}
+
+</style>

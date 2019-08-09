@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="py-3 bg-info">
     <div class="container">
       header partial
     </div>

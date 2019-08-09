@@ -1,42 +1,40 @@
 <template>
-    <div>
-      <b-navbar toggleable="md" type="dark" variant="brand">        
-        <b-container>          
-          <b-navbar-brand>
-            <router-link to="/" class="navbar-brand">
-              <img src="../assets/images/gobierno-rio-cuarto-white.svg" alt="logo gobierno rio cuarto">
-            </router-link>
-          </b-navbar-brand>          
-          <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-          
-          <b-collapse id="nav-collapse" is-nav>
-            <b-navbar-nav class="ml-auto">
-              <li class="nav-item>">
-                <router-link to="/" class="nav-link">Home</router-link>
-              </li>
-              <li class="nav-item>">
-                <router-link to="/cuida" class="nav-link">Cuida</router-link>
-              </li>
-              <li class="nav-item>">
-                <router-link to="/castra" class="nav-link">Castrá</router-link>
-              </li>
-              <li class="nav-item>">
-                <router-link to="/adopta" class="nav-link">Adopta</router-link>
-              </li>
-              <li class="nav-item>">
-                <router-link to="/servicios" class="nav-link">Servicios</router-link>
-              </li>
-              <li class="nav-item>">
-                <router-link to="/contacto" class="nav-link">Contacto</router-link>
-              </li>
-            </b-navbar-nav>
-          </b-collapse>
+    <b-navbar toggleable="md" type="dark" variant="brand" sticky>        
+      <b-container>          
+        
+        <b-navbar-brand>
+          <router-link to="/" class="navbar-brand">
+            <img src="../assets/images/gobierno-rio-cuarto-white.svg" alt="logo gobierno rio cuarto">
+          </router-link>
+        </b-navbar-brand>    
+              
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav class="ml-auto">
+            <li class="nav-item>">
+              <router-link to="/" class="nav-link">Home</router-link>
+            </li>
+            <li class="nav-item>">
+              <router-link to="/cuida" class="nav-link">Cuida</router-link>
+            </li>
+            <li class="nav-item>">
+              <router-link to="/castra" class="nav-link">Castrá</router-link>
+            </li>
+            <li class="nav-item>">
+              <router-link to="/adopta" class="nav-link">Adopta</router-link>
+            </li>
+            <li class="nav-item>">
+              <router-link to="/servicios" class="nav-link">Servicios</router-link>
+            </li>
+            <li class="nav-item>">
+              <router-link to="/contacto" class="nav-link">Contacto</router-link>
+            </li>
+          </b-navbar-nav>
+        </b-collapse>
 
-        </b-container>
-
-
-      </b-navbar>
-    </div>
+      </b-container>
+    </b-navbar>
   
 </template>
 
@@ -66,7 +64,7 @@ export default {
   .navbar-brand{ 
     height: 60px;
     transition: 0.5s;
-    
+
     img{
       height: 100%;
       border: 0px;
