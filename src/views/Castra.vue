@@ -1,7 +1,7 @@
 <template>
   <layout-default>
     <section class="container">
-      <h1>Home</h1>
+      <h1>Castra</h1>
     </section>
   </layout-default>
 </template>
@@ -11,7 +11,7 @@
 import LayoutDefault from '@/layouts/LayoutDefault.vue'
 
 export default {
-  name: 'home',
+  name: 'castra',
   components: {
     LayoutDefault
   }
