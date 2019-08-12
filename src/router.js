@@ -6,6 +6,7 @@ import Castra from './views/Castra.vue'
 import Adopta from './views/Adopta.vue'
 import Servicios from './views/Servicios.vue'
 import Contacto from './views/Contacto.vue'
+import Mascota from './views/Mascota.vue'
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/contacto',
       name: 'contacto',
       component: Contacto
+    },
+    {
+      path: '/mascota/:id',
+      name: 'mascota',
+      component: Mascota
     }
   ]
 })

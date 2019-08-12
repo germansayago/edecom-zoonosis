@@ -10,6 +10,7 @@
           <li class="list-group-item">Edad: <b>{{ pet.edad }}</b></li>
           <li class="list-group-item">Tamaño: <b>{{ pet.medida }}</b></li>
           <li class="list-group-item">Antirrábica: <b>{{ pet.antirrabica }}</b></li>
+          <li class="list-group-item"><router-link :to="{ name: 'mascota', params: { id: pet.id }}" class="btn btn-brand">Ver más</router-link></li>
         </ul>
       </div>
     </div>
@@ -38,8 +39,8 @@ export default {
     Pets() {
       axios
         .get('https://script.google.com/macros/s/AKfycbwI68_FYAYzOLKHwbxIJSX1RH_21MBF1nrxXOpHZlNsKkqvPRHh/exec?spreadsheetId=1Qw85phKJHXxd5ue1PYUcbjZ1uoqZjCpEW-wai0qmLKg&sheet=mascotas')
-        .then( response => {
-          this.pets = response.data
+        .then( res => {
+          this.pets = res.data
           this.loading = false
         })
         .catch()
