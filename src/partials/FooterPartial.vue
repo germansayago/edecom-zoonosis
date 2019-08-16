@@ -47,7 +47,7 @@ export default {
 @import "../../node_modules/bootstrap/scss/functions";
 @import '../assets/scss/variables';
 
-.footer {
+.footer {  
   position: absolute;
   bottom: 0;
   width: 100%;

@@ -49,5 +49,8 @@ export default new Router({
       name: 'mascota',
       component: Mascota
     }
-  ]
+  ],
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  }
 })
