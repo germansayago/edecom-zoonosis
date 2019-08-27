@@ -5,7 +5,7 @@
         <div class="card-header">
          {{ pet.estado }}
         </div>
-        <div :style="`background-image: url(http://drive.google.com/uc?export=view&id=${pet.IDFOTO1}); height: 200px;`" class="bg-image"></div>
+        <div :style="`background-image: url(http://drive.google.com/uc?export=view&id=${pet.FOTO1}); height: 200px;`" class="bg-image"></div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Edad: <b>{{ pet.edad }}</b></li>
           <li class="list-group-item">Tamaño: <b>{{ pet.medida }}</b></li>
